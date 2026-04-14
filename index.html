@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>社内イントラDX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=30">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- PROMO -->
+<div class="promo">おすすめプラン：50,000円（人気No.1）</div>
+
+<!-- HERO -->
+<section class="hero">
+<h1>社内業務を、もっとシンプルに。</h1>
+<p>勤怠・チャット・日報・顧客管理まで、すべてを一つに集約</p>
+<a href="#plans"><button>プランを見る</button></a>
+</section>
+
+<!-- PRODUCT -->
+<section class="product">
+<h2>メイン商品：社内イントラサイト</h2>
+<p>会社の情報共有・業務管理を<br>1つにまとめるクラウドポータル</p>
+</section>
+
+<!-- VALUE -->
+<section class="value">
+<h2>業務をもっと効率化</h2>
+<p>複数のツールを1つにまとめて作業時間を削減</p>
+</section>
+
+<!-- OPTIONS -->
+<section class="options">
+<h2>オプションサービス</h2>
+<p class="sub">イントラ導入と合わせてサポート可能</p>
+
+<div class="option-grid">
+<div class="option-card">
+<h3>Excel・Word ワンポイント講座</h3>
+<p>よく使う機能を分かりやすくサポート</p>
+</div>
+
+<div class="option-card">
+<h3>Wi-Fi環境改善</h3>
+<p>通信トラブルや速度改善</p>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="plans">
+<h2>プラン</h2>
+
+<div class="plans">
+
+<div class="plan" onclick="showFeatures('light', this)">
+<h3>ライト</h3>
+<h1>30,000円</h1>
+<ul>
+<li>勤怠管理</li>
+<li>社内チャット</li>
+<li>カレンダー</li>
+<li>通知機能</li>
+</ul>
+<p class="more">もっと見る</p>
+</div>
+
+<div class="plan recommended" onclick="showFeatures('standard', this)">
+<div class="badge">おすすめ</div>
+<h3>スタンダード</h3>
+<h1>50,000円</h1>
+<ul>
+<li>勤怠管理</li>
+<li>社内チャット</li>
+<li>社内報</li>
+<li>カレンダー</li>
+<li>AI日報</li>
+<li>通知機能</li>
+<li>メンバー管理</li>
+<li>連絡先管理</li>
+<li>緊急連絡先</li>
+</ul>
+<p class="more">もっと見る</p>
+</div>
+
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="featuresSection">
+<h2>主な機能</h2>
+<div class="feature-grid" id="featureGrid"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>お問い合わせ</h2>
+
+<form action="mailto:shiela.concepcion@gbi.co.jp" method="POST" enctype="text/plain">
+<input placeholder="会社名" required>
+<input type="email" placeholder="メール" required>
+<textarea placeholder="内容" required></textarea>
+<button>送信</button>
+</form>
+
+</section>
+
+<script>
+let currentPlan = null;
+
+function showFeatures(plan, el){
+
+const grid = document.getElementById("featureGrid");
+const section = document.getElementById("featuresSection");
+
+document.querySelectorAll(".plan").forEach(p=>{
+p.classList.remove("active");
+});
+
+if(currentPlan === plan){
+section.style.display = "none";
+currentPlan = null;
+return;
+}
+
+el.classList.add("active");
+currentPlan = plan;
+
+const features = {
+light: [
+["fa-clock","勤怠管理"],
+["fa-comments","社内チャット"],
+["fa-calendar","カレンダー"],
+["fa-bell","通知機能"]
+],
+standard: [
+["fa-clock","勤怠管理"],
+["fa-comments","社内チャット"],
+["fa-newspaper","社内報"],
+["fa-calendar","カレンダー"],
+["fa-robot","AI日報"],
+["fa-bell","通知機能"],
+["fa-users","メンバー管理"],
+["fa-address-book","連絡先管理"],
+["fa-shield-halved","緊急連絡先"]
+]
+};
+
+grid.innerHTML = "";
+
+features[plan].forEach(f=>{
+grid.innerHTML += `
+<div class="feature-card">
+<i class="fa-solid ${f[0]}"></i>
+<p>${f[1]}</p>
+</div>`;
+});
+
+section.style.display = "block";
+section.scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>

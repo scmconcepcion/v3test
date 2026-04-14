@@ -1,0 +1,178 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f8fafc;
+color:#1e293b;
+}
+
+/* promo */
+.promo{
+background:#1e3a5f;
+color:white;
+text-align:center;
+padding:12px;
+font-weight:600;
+}
+
+/* hero */
+.hero{
+text-align:center;
+padding:140px 20px;
+background:linear-gradient(135deg,#2b6cb0,#4fd1c5);
+color:white;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 28px;
+border:none;
+border-radius:999px;
+background:white;
+color:#1e3a5f;
+cursor:pointer;
+}
+
+/* sections */
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+h2{
+margin-bottom:15px;
+}
+
+/* product/value */
+.product,.options{
+background:white;
+}
+
+.value{
+background:#f1f5f9;
+}
+
+/* options */
+.option-grid{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.option-card{
+width:300px;
+padding:25px;
+background:#f8fafc;
+border-radius:16px;
+border:1px solid #e2e8f0;
+}
+
+/* pricing */
+.plans{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.plan{
+width:300px;
+background:white;
+padding:25px;
+border-radius:16px;
+border:1px solid #e2e8f0;
+cursor:pointer;
+transition:.25s;
+}
+
+.plan:hover{
+transform:translateY(-5px);
+}
+
+.plan.active{
+border:2px solid #2b6cb0;
+}
+
+.recommended{
+border:2px solid #2b6cb0;
+}
+
+.badge{
+background:#38bdf8;
+color:white;
+padding:5px 12px;
+border-radius:999px;
+font-size:12px;
+display:inline-block;
+margin-bottom:10px;
+}
+
+.plan ul{
+list-style:none;
+line-height:1.8;
+color:#64748b;
+}
+
+.more{
+margin-top:10px;
+color:#2b6cb0;
+font-weight:600;
+}
+
+/* features */
+.features{
+display:none;
+background:#f1f5f9;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+margin-top:30px;
+}
+
+.feature-card{
+background:white;
+padding:25px;
+border-radius:16px;
+border:1px solid #e2e8f0;
+}
+
+.feature-card i{
+font-size:24px;
+color:#2b6cb0;
+margin-bottom:10px;
+}
+
+/* contact */
+.contact input,
+.contact textarea{
+display:block;
+width:260px;
+margin:10px auto;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.contact button{
+padding:10px 20px;
+border:none;
+background:#2b6cb0;
+color:white;
+border-radius:6px;
+}
