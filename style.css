@@ -9,6 +9,7 @@ body{
   font-family:'Inter',sans-serif;
   background:#f8fafc;
   color:#1e293b;
+  line-height:1.6;
 }
 
 /* PROMO */
@@ -23,22 +24,25 @@ body{
 /* HERO */
 .hero{
   text-align:center;
-  padding:140px 20px 160px;
+  padding:160px 20px 200px;
   background:linear-gradient(135deg,#2b6cb0,#4fd1c5);
   color:white;
   position:relative;
+  overflow:hidden;
 }
 
 .hero h1{
-  font-size:48px;
+  font-size:52px;
   font-weight:700;
 }
 
 .hero p{
   margin-top:15px;
+  font-size:18px;
   opacity:0.95;
 }
 
+/* CTA */
 .hero button{
   margin-top:30px;
   padding:14px 32px;
@@ -48,24 +52,25 @@ body{
   color:#1e3a5f;
   font-weight:600;
   cursor:pointer;
+  transition:.3s;
 }
 
-/* WAVE */
-.hero-wave{
+.hero button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ✅ PERFECT CURVE (matches your screenshot) */
+.hero::after{
+  content:"";
   position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-}
-
-.hero-wave svg{
-  display:block;
-  width:100%;
-  height:120px;
-}
-
-.hero-wave path{
-  fill:#f8fafc;
+  bottom:-70px;
+  left:50%;
+  transform:translateX(-50%);
+  width:160%;
+  height:140px;
+  background:#f8fafc;
+  border-radius:50%;
 }
 
 /* SECTIONS */
@@ -74,7 +79,13 @@ section{
   text-align:center;
 }
 
-.product,.options{
+h2{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.product,
+.options{
   background:white;
 }
 
@@ -82,7 +93,22 @@ section{
   background:#f1f5f9;
 }
 
+.product p,
+.value p{
+  color:#64748b;
+}
+
 /* OPTIONS */
+.options .sub{
+  margin-top:10px;
+  color:#64748b;
+}
+
+.options .highlight{
+  color:#2b6cb0;
+  font-weight:600;
+}
+
 .option-grid{
   display:flex;
   gap:20px;
@@ -97,12 +123,26 @@ section{
   background:#f8fafc;
   border-radius:16px;
   border:1px solid #e2e8f0;
+  transition:.25s;
+}
+
+.option-card:hover{
+  transform:translateY(-5px);
 }
 
 .option-card i{
   font-size:24px;
   color:#2b6cb0;
   margin-bottom:10px;
+}
+
+.option-card h3{
+  margin-bottom:8px;
+}
+
+.option-card p{
+  font-size:14px;
+  color:#64748b;
 }
 
 /* PRICING */
@@ -119,6 +159,17 @@ section{
   padding:25px;
   border-radius:16px;
   border:1px solid #e2e8f0;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.plan:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.plan.active{
+  border:2px solid #2b6cb0;
 }
 
 .recommended{
@@ -135,6 +186,22 @@ section{
   margin-bottom:10px;
 }
 
+.plan h1{
+  margin:10px 0;
+}
+
+.plan ul{
+  list-style:none;
+  line-height:1.8;
+  color:#64748b;
+}
+
+.more{
+  margin-top:10px;
+  color:#2b6cb0;
+  font-weight:600;
+}
+
 /* FEATURES */
 .features{
   display:none;
@@ -146,7 +213,7 @@ section{
   grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   gap:20px;
   max-width:1000px;
-  margin:30px auto;
+  margin:30px auto 0;
 }
 
 .feature-card{
@@ -156,6 +223,12 @@ section{
   border:1px solid #e2e8f0;
 }
 
+.feature-card i{
+  font-size:24px;
+  color:#2b6cb0;
+  margin-bottom:10px;
+}
+
 /* CONTACT */
 .contact input,
 .contact textarea{
@@ -163,14 +236,34 @@ section{
   width:260px;
   margin:10px auto;
   padding:10px;
-  border:1px solid #ccc;
   border-radius:6px;
+  border:1px solid #ccc;
 }
 
 .contact button{
   padding:10px 20px;
+  border:none;
   background:#2b6cb0;
   color:white;
-  border:none;
   border-radius:6px;
+  cursor:pointer;
+}
+
+.contact button:hover{
+  background:#1e4e8c;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .hero{
+    padding:120px 20px 160px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
 }
