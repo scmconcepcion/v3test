@@ -61,17 +61,24 @@ body{
   box-shadow:0 10px 20px rgba(0,0,0,0.15);
 }
 
+.hero{
+  position:relative;
+  z-index:1;
+}
+
 /* CURVE */
 .hero::after{
   content:"";
   position:absolute;
-  bottom:-120px;
   left:50%;
   transform:translateX(-50%);
-  width:160%;
-  height:260px;
+  bottom:-1px;              /* key fix: attach to bottom */
+  width:120%;
+  height:120px;
   background:#f8fafc;
-  border-radius:50%;
+  border-bottom-left-radius:50% 100%;
+  border-bottom-right-radius:50% 100%;
+  z-index:2;
 }
 
 /* SECTIONS */
