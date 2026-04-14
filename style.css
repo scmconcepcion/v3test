@@ -176,3 +176,28 @@ background:#2b6cb0;
 color:white;
 border-radius:6px;
 }
+
+/* OPTIONS IMPROVEMENTS (keep existing design) */
+
+.options .sub{
+  color:#64748b;
+  margin-top:10px;
+  line-height:1.6;
+}
+
+.options .highlight{
+  color:#2b6cb0;
+  font-weight:600;
+}
+
+/* icon style (matches your blue theme) */
+.option-card i{
+  font-size:24px;
+  color:#2b6cb0;
+  margin-bottom:10px;
+}
+
+/* better spacing for more cards */
+.option-grid{
+  margin-top:30px;
+}
