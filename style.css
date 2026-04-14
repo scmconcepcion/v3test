@@ -19,27 +19,61 @@ padding:12px;
 font-weight:600;
 }
 
-/* hero */
+/* HERO (restore depth + modern look) */
 .hero{
-text-align:center;
-padding:140px 20px;
-background:linear-gradient(135deg,#2b6cb0,#4fd1c5);
-color:white;
+  text-align:center;
+  padding:160px 20px 180px;
+  background: linear-gradient(135deg, #2b6cb0, #4fd1c5);
+  color:white;
+  position:relative;
+  overflow:hidden;
 }
 
+/* big title */
 .hero h1{
-font-size:42px;
-margin-bottom:10px;
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:20px;
+  letter-spacing:1px;
 }
 
+/* subtitle */
+.hero p{
+  font-size:18px;
+  line-height:1.6;
+  opacity:0.9;
+}
+
+/* CTA button */
 .hero button{
-margin-top:20px;
-padding:12px 28px;
-border:none;
-border-radius:999px;
-background:white;
-color:#1e3a5f;
-cursor:pointer;
+  margin-top:30px;
+  padding:14px 32px;
+  border:none;
+  border-radius:999px;
+  background:white;
+  color:#1e3a5f;
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* curved bottom effect */
+.hero::after{
+  content:"";
+  position:absolute;
+  bottom:-80px;
+  left:50%;
+  transform:translateX(-50%);
+  width:140%;
+  height:200px;
+  background:#f8fafc;
+  border-radius:50%;
 }
 
 /* sections */
