@@ -9,7 +9,6 @@ body{
   font-family:'Inter',sans-serif;
   background:#f8fafc;
   color:#1e293b;
-  line-height:1.6;
 }
 
 /* PROMO */
@@ -21,77 +20,44 @@ body{
   font-weight:600;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero{
-text-align:center;
-padding:140px 20px 180px;
-
-/* 🔥 strong gradient */
-background:linear-gradient(135deg,#2b6cb0,#4fd1c5);
-color:white;
-position:relative;
-overflow:visible;
+  text-align:center;
+  padding:140px 20px 160px;
+  background:linear-gradient(135deg,#2b6cb0,#4fd1c5);
+  color:white;
+  position:relative;
 }
 
 .hero h1{
-font-size:48px;
-font-weight:700;
-letter-spacing:1px;
-text-shadow:0 6px 20px rgba(0,0,0,0.25);
+  font-size:48px;
+  font-weight:700;
 }
 
 .hero p{
-margin-top:15px;
-opacity:0.95;
-font-size:16px;
+  margin-top:15px;
+  opacity:0.95;
 }
 
-.hero button{
-margin-top:30px;
-padding:14px 32px;
-border-radius:999px;
-border:none;
-background:white;
-color:#1e3a5f;
-font-weight:600;
-cursor:pointer;
-transition:0.25s;
-box-shadow:0 6px 20px rgba(0,0,0,0.15);
-}
-
-.hero button:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* CTA */
 .hero button{
   margin-top:30px;
   padding:14px 32px;
-  border:none;
   border-radius:999px;
+  border:none;
   background:white;
   color:#1e3a5f;
   font-weight:600;
   cursor:pointer;
-  transition:.3s;
 }
 
-.hero button:hover{
-  transform:translateY(-3px);
-  box-shadow:0 10px 20px rgba(0,0,0,0.15);
-}
-
-/* wave container */
+/* WAVE */
 .hero-wave{
   position:absolute;
   bottom:0;
   left:0;
   width:100%;
-  line-height:0;
 }
 
-/* wave shape */
 .hero-wave svg{
   display:block;
   width:100%;
@@ -99,7 +65,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 .hero-wave path{
-  fill:#f8fafc; /* same as body background */
+  fill:#f8fafc;
 }
 
 /* SECTIONS */
@@ -108,12 +74,6 @@ section{
   text-align:center;
 }
 
-h2{
-  margin-bottom:15px;
-  font-size:26px;
-}
-
-/* PRODUCT / VALUE */
 .product,.options{
   background:white;
 }
@@ -122,28 +82,7 @@ h2{
   background:#f1f5f9;
 }
 
-.product p,
-.value p{
-  color:#64748b;
-}
-
-.product{
-  position:relative;
-  z-index:1;
-}
-
 /* OPTIONS */
-.options .sub{
-  color:#64748b;
-  margin-top:10px;
-  line-height:1.6;
-}
-
-.options .highlight{
-  color:#2b6cb0;
-  font-weight:600;
-}
-
 .option-grid{
   display:flex;
   gap:20px;
@@ -158,26 +97,12 @@ h2{
   background:#f8fafc;
   border-radius:16px;
   border:1px solid #e2e8f0;
-  transition:.25s;
-}
-
-.option-card:hover{
-  transform:translateY(-5px);
 }
 
 .option-card i{
   font-size:24px;
   color:#2b6cb0;
   margin-bottom:10px;
-}
-
-.option-card h3{
-  margin-bottom:8px;
-}
-
-.option-card p{
-  font-size:14px;
-  color:#64748b;
 }
 
 /* PRICING */
@@ -194,17 +119,6 @@ h2{
   padding:25px;
   border-radius:16px;
   border:1px solid #e2e8f0;
-  cursor:pointer;
-  transition:.25s;
-}
-
-.plan:hover{
-  transform:translateY(-6px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.plan.active{
-  border:2px solid #2b6cb0;
 }
 
 .recommended{
@@ -221,22 +135,6 @@ h2{
   margin-bottom:10px;
 }
 
-.plan h1{
-  margin:10px 0;
-}
-
-.plan ul{
-  list-style:none;
-  line-height:1.8;
-  color:#64748b;
-}
-
-.more{
-  margin-top:10px;
-  color:#2b6cb0;
-  font-weight:600;
-}
-
 /* FEATURES */
 .features{
   display:none;
@@ -248,7 +146,7 @@ h2{
   grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   gap:20px;
   max-width:1000px;
-  margin:30px auto 0;
+  margin:30px auto;
 }
 
 .feature-card{
@@ -258,52 +156,21 @@ h2{
   border:1px solid #e2e8f0;
 }
 
-.feature-card i{
-  font-size:24px;
-  color:#2b6cb0;
-  margin-bottom:10px;
-}
-
 /* CONTACT */
-.contact form{
-  margin-top:20px;
-}
-
 .contact input,
 .contact textarea{
   display:block;
   width:260px;
   margin:10px auto;
   padding:10px;
-  border-radius:6px;
   border:1px solid #ccc;
+  border-radius:6px;
 }
 
 .contact button{
   padding:10px 20px;
-  border:none;
   background:#2b6cb0;
   color:white;
+  border:none;
   border-radius:6px;
-  cursor:pointer;
-  transition:.2s;
-}
-
-.contact button:hover{
-  background:#1e4e8c;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-  .hero h1{
-    font-size:32px;
-  }
-
-  .hero p{
-    font-size:14px;
-  }
-
-  .hero{
-    padding:120px 20px 140px;
-  }
 }
