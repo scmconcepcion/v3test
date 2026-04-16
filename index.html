@@ -3,100 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>社内イントラDX</title>
+<title>株式会社グローバルイノベーション</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- PROMO -->
 <div class="promo">おすすめプラン：50,000円（人気No.1）</div>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>社内業務を、もっとシンプルに。</h1>
-  <p>勤怠・チャット・日報・顧客管理まで、すべてを一つに集約</p>
-  <a href="#plans"><button>プランを見る</button></a>
+<header class="header">
+  <div class="nav">
 
-  <!-- ✅ CURVE -->
-  <div class="hero-wave">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-      <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z"></path>
-    </svg>
+    <div class="logo-area">
+      <img src="logo.png">
+      <span class="company-name">株式会社グローバルイノベーション</span>
+    </div>
+
+    <div class="nav-right">
+      <nav>
+        <a href="#"><i class="fa-solid fa-house"></i> ホーム</a>
+        <a href="#"><i class="fa-solid fa-building"></i> 会社について</a>
+        <a href="#"><i class="fa-solid fa-laptop-code"></i> サービス</a>
+        <a href="#"><i class="fa-solid fa-box"></i> 製品</a>
+       </nav>
+      <a class="btn-support">サポート</a>
+    </div>
+
   </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="hero-text">
+      <h1>社内業務を、</h1>
+<h1>もっとシンプルに。</h1>
+      <p>勤怠・チャット・日報・顧客管理まで、すべてを一つに集約</p>
+      <a href="#contact" class="btn-primary">お問い合わせ</a>
+
+      <div class="hero-services">
+        <div><i class="fa-solid fa-laptop-code"></i> Web制作</div>
+        <div><i class="fa-solid fa-shield-halved"></i> セキュリティ</div>
+        <div><i class="fa-solid fa-headset"></i> ITサポート</div>
+        <div><i class="fa-solid fa-briefcase"></i> コンサル</div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="your-illustration.png">
+    </div>
+
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+    <div class="particles"></div>
+    <div class="particles">
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+</div>
+
 </section>
 
-<!-- PRODUCT -->
-<section class="product">
-<h2>メイン商品：社内イントラサイト</h2>
-<p>会社の情報共有・業務管理を<br>1つにまとめるクラウドポータル</p>
-</section>
-
-<!-- VALUE -->
-<section class="value">
-<h2>業務をもっと効率化</h2>
-<p>複数のツールを1つにまとめて作業時間を削減</p>
-</section>
-
-<!-- OPTIONS -->
-<section class="options">
-<h2>オプションサービス</h2>
-
-<p class="sub">
-イントラ導入と合わせてサポート可能<br>
-<span class="highlight">お客様のニーズに応じたITサービスもご提供しています</span>
-</p>
-
-<div class="option-grid">
-
-<div class="option-card">
-<i class="fa-solid fa-file-excel"></i>
-<h3>Excel・Word ワンポイント講座</h3>
-<p>よく使う機能を分かりやすくサポート</p>
-</div>
-
-<div class="option-card">
-<i class="fa-solid fa-wifi"></i>
-<h3>Wi-Fi環境改善</h3>
-<p>通信トラブルや速度改善</p>
-</div>
-
-<div class="option-card">
-<i class="fa-solid fa-laptop-code"></i>
-<h3>Webデザイン</h3>
-<p>企業サイト・LP制作など柔軟に対応</p>
-</div>
-
-<div class="option-card">
-<i class="fa-solid fa-shield-halved"></i>
-<h3>ネットワーク / セキュリティ</h3>
-<p>安全で安定したIT環境を構築</p>
-</div>
-
-<div class="option-card">
-<i class="fa-solid fa-headset"></i>
-<h3>ITサポート</h3>
-<p>日常のトラブルや運用をサポート</p>
-</div>
-
-<div class="option-card">
-<i class="fa-solid fa-lightbulb"></i>
-<h3>ITコンサルティング</h3>
-<p>業務改善・DX推進をご提案</p>
-</div>
-
-</div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing" id="plans">
+<section class="pricing">
 <h2>プラン</h2>
-
 <div class="plans">
 
 <div class="plan" onclick="showFeatures('light', this)">
@@ -132,24 +103,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 </div>
 </section>
 
-<!-- FEATURES -->
 <section class="features" id="featuresSection">
 <h2>主な機能</h2>
 <div class="feature-grid" id="featureGrid"></div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
-<h2>お問い合わせ</h2>
+<section class="options">
+<h2>オプションサービス</h2>
+<p class="sub">
+イントラ導入と合わせてサポート可能<br>
+<span class="highlight">お客様の課題に合わせた最適なITサービスをご提案します</span>
+</p>
 
-<form action="mailto:shiela.concepcion@gbi.co.jp" method="POST" enctype="text/plain">
-<input placeholder="会社名" required>
-<input type="email" placeholder="メール" required>
-<textarea placeholder="内容" required></textarea>
-<button>送信</button>
-</form>
+<div class="option-grid">
 
+<div class="option-card"><i class="fa-solid fa-file-excel"></i><h3>Excel講座</h3><p>業務効率アップ</p></div>
+<div class="option-card"><i class="fa-solid fa-wifi"></i><h3>Wi-Fi改善</h3><p>通信環境を最適化</p></div>
+<div class="option-card"><i class="fa-solid fa-laptop-code"></i><h3>Web制作</h3><p>サイト制作対応</p></div>
+<div class="option-card"><i class="fa-solid fa-shield-halved"></i><h3>セキュリティ</h3><p>安全な環境構築</p></div>
+<div class="option-card"><i class="fa-solid fa-headset"></i><h3>ITサポート</h3><p>運用支援</p></div>
+<div class="option-card"><i class="fa-solid fa-lightbulb"></i><h3>ITコンサル</h3><p>DX推進</p></div>
+
+
+</div>
 </section>
 
+<section id="contact" class="contact">
+  <h2>お問い合わせ</h2>
+
+  <form>
+    <input type="text" placeholder="会社名">
+    <input type="email" placeholder="メールアドレス">
+    <textarea placeholder="お問い合わせ内容"></textarea>
+    <button>送信</button>
+  </form>
+</section>
+
+<script>
+let currentPlan=null;
+function showFeatures(plan,el){
+const grid=document.getElementById("featureGrid");
+const section=document.getElementById("featuresSection");
+document.querySelectorAll(".plan").forEach(p=>p.classList.remove("active"));
+if(currentPlan===plan){section.style.display="none";currentPlan=null;return;}
+el.classList.add("active");currentPlan=plan;
+
+const features={
+light:[["fa-clock","勤怠管理"],["fa-comments","社内チャット"],["fa-calendar","カレンダー"],["fa-bell","通知機能"]],
+standard:[["fa-clock","勤怠管理"],["fa-comments","社内チャット"],["fa-newspaper","社内報"],["fa-calendar","カレンダー"],["fa-robot","AI日報"],["fa-bell","通知機能"],["fa-users","メンバー管理"],["fa-address-book","連絡先管理"],["fa-shield-halved","緊急連絡先"]]
+};
+
+grid.innerHTML="";
+features[plan].forEach(f=>{
+grid.innerHTML+=`<div class="feature-card"><i class="fa-solid ${f[0]}"></i><p>${f[1]}</p></div>`;
+});
+
+section.style.display="block";
+}
+</script>
+
 </body>
+
 </html>
