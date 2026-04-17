@@ -14,7 +14,7 @@ line-height:1.6;
 /* PROMO BAR */
 .promo{
   width:100%;
-  background:#0d1b6b; /* matches hero dark blue */
+  background:#3649b7; /* matches hero dark blue */
   color:white;
   text-align:center;
   padding:10px 0;
@@ -643,7 +643,7 @@ box-shadow:0 10px 20px rgba(0,0,0,0.2);
 /* ================= FOOTER ================= */
 
 #footer{
-background:#050816;   /* matches hero dark tone */
+background:#141e49;   /* matches hero dark tone */
 color:white;
 padding:40px 20px 20px;
 text-align:center;
