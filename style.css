@@ -22,6 +22,10 @@ line-height:1.6;
   font-weight:600;
 }
 /* ================= HEADER ================= */
+#home {
+  scroll-margin-top: 120px;
+}
+
 .header{
   position:absolute;
   top:50px; /* sits below promo */
@@ -49,11 +53,55 @@ height:42px;
 display:block;
 }
 
+.logo-wrap:hover{
+  opacity:0.85;
+  background:rgba(255,255,255,0.05);
+}
+
 .company-name{
 color:white;
 font-size:14px;
 font-weight:600;
 white-space:nowrap;
+}
+
+/* LOGO WRAP */
+.logo-wrap{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  transition: 0.3s;
+  padding:4px 6px;   /* improves click area */
+  border-radius:8px;
+}
+
+/* LOGO IMAGE */
+.logo-wrap img{
+  height:42px;
+  display:block;
+}
+
+/* TEXT BLOCK */
+.company-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+/* 株式会社 (small text) */
+.company-small-header{
+  font-size:12px;
+  color:white;
+  opacity:0.8;
+}
+
+/* グローバルイノベーション (main name) */
+.company-name-header{
+  font-size:16px;
+  font-weight:600;
+  color:white;
+  white-space:nowrap;
 }
 
 .nav-right{
@@ -89,6 +137,13 @@ padding:10px 22px;
 border-radius:10px;
 font-size:14px;
 font-weight:600;
+text-decoration: none;
+display: inline-block;
+}
+
+.btn-support:hover{
+opacity:0.9;
+transform:translateY(-2px);
 }
 
 /* ================= HERO 
@@ -570,4 +625,53 @@ margin-top:20px;
 html
 {
   scroll-behavior:smooth;
+}
+
+.back-to-top{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#1a73e8;
+color:white;
+padding:12px 16px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ================= FOOTER ================= */
+
+#footer{
+background:#050816;   /* matches hero dark tone */
+color:white;
+padding:40px 20px 20px;
+text-align:center;
+}
+
+/* Footer menu (if you add links later) */
+#footerMenu{
+margin-bottom:20px;
+}
+
+#footerMenu a{
+color:rgba(255,255,255,0.8);
+text-decoration:none;
+margin:0 12px;
+font-size:14px;
+transition:0.3s;
+}
+
+#footerMenu a:hover{
+color:white;
+opacity:0.9;
+}
+
+/* Copyright text */
+.copyright{
+font-size:13px;
+color:rgba(255,255,255,0.6);
+border-top:1px solid rgba(255,255,255,0.1);
+padding-top:15px;
+margin-top:15px;
 }
