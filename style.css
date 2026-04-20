@@ -131,10 +131,10 @@ opacity:0.8;
 }
 
 .btn-support{
-background:linear-gradient(135deg,#a78bfa,#7c3aed);
+background:linear-gradient(135deg,#b2b7fd,#083655);
 color:white;
 padding:10px 22px;
-border-radius:10px;
+border-radius:12px;
 font-size:14px;
 font-weight:600;
 text-decoration: none;
@@ -201,7 +201,7 @@ margin-top:25px;
 background:linear-gradient(135deg,#6366f1,#8b5cf6);
 color:white;
 padding:14px 28px;
-border-radius:10px;
+border-radius:30px;
 font-weight:600;
 text-decoration:none;
 transition:all 0.3s ease;
@@ -391,7 +391,7 @@ margin-bottom:10px;
 }
 
 .more{
-color:#11a0a7;
+color:#1c8287;
 font-size:14px;
 font-weight: 600;
 }
