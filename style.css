@@ -36,7 +36,7 @@ line-height:1.6;
 .nav{
 max-width:1200px;
 margin:0 auto;
-padding:0 40px;
+padding:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -237,6 +237,7 @@ opacity:0.9;
 flex:1;
 display:flex;
 justify-content:center;
+align-items:right;
 }
 
 .hero-image img{
@@ -360,8 +361,9 @@ margin-bottom:10px;
 }
 
 .more{
-color:#1a73e8;
+color:#11a0a7;
 font-size:14px;
+font-weight: 600;
 }
 
 /* ================= FEATURES ================= */
@@ -417,7 +419,7 @@ color:#64748b;
 }
 
 .highlight{
-color:#1a73e8;
+color:#4573af;
 font-weight:600;
 }
 
@@ -510,8 +512,10 @@ padding:12px 24px;
 background:#1a73e8;
 color:white;
 border:none;
-border-radius:8px;
+border-radius:10px;
 cursor:pointer;
+font-size: 13px;
+font-weight: 400;
 }
 
 #contact{
